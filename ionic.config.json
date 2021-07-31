@@ -1,0 +1,7 @@
+{
+  "name": "mobilepos",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
