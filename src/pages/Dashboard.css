@@ -31,6 +31,19 @@
 .overview .card-content {
     background-color: #ffffff;
     border-radius: 10px;
+    display: grid;
+    grid-template-columns:   auto ;
+    padding: 15px 13px;
+}
+
+.overview .card-content small {
+    font-weight: normal;
+    font-size: 0.8rem;
+}
+
+.overview .card-content h1 {
+    font-weight: bold;
+    font-size: 1.4rem; 
 }
  
 .mb20 {
@@ -47,15 +60,21 @@ h5 {
 }
 
 .best-selling {
-    padding:10px 20px; 
+    padding:10px 20px;  
+}
+
+.best-selling .wrapper {
+    background-color: #ffffff;
+    padding: 20px;
 }
 
 
 .top-ranking {
     background-color: #fff;
-    padding:12px 15px; 
+    padding:10px 0; 
     border-radius: 5px;
     margin-bottom: 5px;
+    border-bottom: solid 1px #f4f4f4;
 }
 
 .top-ranking h6 {
@@ -69,4 +88,9 @@ h5 {
 
 .text-default {
     color: #808CB3;
+}
+
+.overview.r2 { 
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
 }

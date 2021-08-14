@@ -68,17 +68,19 @@ const Menu: React.FC = () => {
       <IonContent>
         <IonList id="inbox-list">
           <IonListHeader>Inbox</IonListHeader>
-          <IonNote>hi@ionicframework.com</IonNote>
-          {appPages.map((appPage, index) => {
-            return (
-              <IonMenuToggle key={index} autoHide={false}>
-                <IonItem className={location.pathname === appPage.url ? 'selected' : ''} routerLink={appPage.url} routerDirection="none" lines="none" detail={false}>
-                  <IonIcon slot="start" ios={appPage.iosIcon} md={appPage.mdIcon} />
-                  <IonLabel>{appPage.title}</IonLabel>
-                </IonItem>
-              </IonMenuToggle>
-            );
-          })}
+          <IonNote>hi@ionicframework.com</IonNote> 
+            <IonMenuToggle key={1} autoHide={false}>
+              <IonItem className={'selected'} routerLink={'/dashboard'} routerDirection="none" lines="none" detail={false}>
+                <IonIcon slot="start"  />
+                <IonLabel>Dashboard</IonLabel>
+              </IonItem>
+            </IonMenuToggle>
+            <IonMenuToggle key={1} autoHide={false}>
+              <IonItem routerLink={'/products'} routerDirection="none" lines="none" detail={false}>
+                <IonIcon slot="start"  />
+                <IonLabel>Products</IonLabel>
+              </IonItem>
+            </IonMenuToggle>
         </IonList>
  
       </IonContent>
